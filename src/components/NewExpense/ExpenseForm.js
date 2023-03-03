@@ -9,6 +9,7 @@ const ExpenseForm = () => {
     enteredTitle: "",
     enteredAmount: "",
     enteredDate: "",
+    
   });
   const titleChangeHandler = (event) => {
     // setEnteredTitle(event.target.value);
@@ -31,6 +32,14 @@ const ExpenseForm = () => {
     setUserInput({
       ...userInput,
       enteredDate: event.target.value,
+    });
+  };
+
+  const timeChangeHandler = (event) => {
+    // setEnteredDate(event.target.value);
+    setUserInput({
+      ...userInput,
+      enteredTime: event.target.value,
     });
   };
   return (
